@@ -28,3 +28,5 @@ let marcas = ["Samsung", "Iphone", "Motorola", "Asus"]
 //É possível acessar o valor de um Array referindo-se ao número do desse valor expecífico:
 
 console.log(marcas[2])
+marcas.push("Usado")
+console.log(marcas)

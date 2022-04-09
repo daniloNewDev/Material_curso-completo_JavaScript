@@ -1,59 +1,47 @@
-//Objetos.
+//Objeto.
+//Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome(ou chave) e um valor;
+//É possível atribuir uma 'function' ao valor de propriedade, que é então considerada um "Método do Objeto";
 
-//Objetos no JavaScript são também variáveis, entretanto o objeto pode conter muitos valores;
 
-let usuario = { nome: "Danilo", sobrenome: "Leite", idade: 36, cnh: true }
-
-//Estes valores são declarados em pares com nome e valor separados por dois pontos (nome: valor), a quebra de linha não faz diferença na definição dos objetos:
-
-let usuario2 = {
-    nome: "Shalom",
-    sobrenome: "Boker Tov",
+let pessoa = {
+    nome: "Danilo",
     idade: 36,
-    cnh: true
+    profissao: "Motoboy",
+    characters: "Clark, Ralf, Leona"
 }
 
-//Propriedades:
+console.log(pessoa.profissao)
 
-//Os valores em pares(nome: valor) atribuídos às variáveis são denominados PROPRIEDADES. Há duas maneiras de accessar essas propriedades:
-
-//nomeDoObjeto.nomeDaPropriedade:
-console.log(usuario.nome + " " + usuario.sobrenome)
-
-//nomeDoObjeto[nomeDaPropriedade]:
-
-console.log(usuario2["nome"])
-console.log(usuario2["nome"] + " " + usuario2["sobrenome"])
-
-//Portanto 'Objetos' em JavaScript são containers para VALORES NOMEADOS chamados de Propriedades.
+//Usando o delete  Propriedades:
+delete pessoa.profissao
+console.log(pessoa)
 
 
-//Métodos de Objetos.
+//Copiando Propriedades com o método '.assign()':
+let carro = {
+    portas: 2,
+    portamalas: '200l',
+    motor: '2.0'
+}
+let adicionais = { //Propriedades a serem copiadas.
+    tetosolar: true,
+    arcondicionado: true
+}
+Object.assign(carro, adicionais) //.assign()
+console.log(carro)
 
-//Objetos também podem ter métodos. Neste caso, são ações que podem ser executadas em objetos. Os métodos são armazenados em propriedades(nome:valor) como definições de functions:
-
-let usuario3 = {
-        nome: "Iehudah",
-        sobreNome: "ben Adam",
-        idade: 36,
-        cnh: true,
-        nomeCompleto: function() { return this.nome + " " + this.sobreNome }
+//As propriedades além de tipos de dados como 'String', 'Number' ou 'Boolean' também recebem um Array como valor:
+let bag = {
+        cabos: "Blindados",
+        encordamento: 3,
+        jogoDeChave: true,
+        alimento: ["Suco", "Água", "Refirgerante", "Doce", "Salgado", "Guardanapo", "Copos"]
     }
-    /*Aqui neste exemplo
+    //Para acessar o valor de dentro do Array éusada a sintaxe "nomeDoObjeto.nomeDaPropriedade[posição do índice]" como no exemplo abaixo:
+console.log(bag.alimento[1])
 
-    "function() { return this.nome + " " + this.sobreNome }"
+//Para reescrever um índice uma propriedade ao Objeto
 
-    "this" se refere ao objeto, nesse caso se refere ao objeto "usuario3"
-    
-//então 'this.nome' se refere à propriedade "nome" do "usuario3";
-//e 'this.soberNome' se refere à propriedades "sobreNome" do objeto usuario3".
-
-    nota-se que foi usado a palavra "this". O "this" é uma 'Palavra-Chave' não é uma propriedade e nem um método.
-
-
-    */
-
-//É possivél acessar o método do objeto com a sintaxe 'nomeDoObjeto.nomeDoMétodo()', como no exemplo abaixo:
-
-console.log(usuario3.nomeCompleto())
-    //O método é acessado no formato de uma Function.
+bag.cabos = "Normal"
+bag.alimento[-1] = "Suco gelado"
+    //console.log(bag)
