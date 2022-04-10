@@ -15,3 +15,5 @@ let carros2 = {
     jeep: "renegade"
 }
 console.log(Object.keys(carros2))
+    //No caso do 'console.log()', a execução retorna as chaves(keys) da propriedade e o valor da propriedade:
+console.log(carros2)
