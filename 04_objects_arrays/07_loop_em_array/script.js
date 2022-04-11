@@ -10,6 +10,6 @@ console.log(casa[2])
 
 
 //Com a execução do loop o código fica menos extenso, inclusive se a quantidade de propriedades for alta:
-for (let i = 0; i <= casa.length; i++) {
+for (let i = 0; i < casa.length; i++) {
     console.log(casa[i])
 }
