@@ -1,7 +1,7 @@
 //Funções e métodos de String - cursosDoMain()
 
 let nome = "Danilo"
-    //O método 'length' retorna a quantidade de caracteres da variável:
+    //O método 'length' retorna o número de índices da variável:
 console.log(nome.length)
 
 //
@@ -9,12 +9,13 @@ console.log(nome.length)
 let bracha = "Baruch HShem"
     //O método 'toLowerCase()' retorna os caracteres da String em caixa baixa:
 console.log(bracha.toLowerCase())
+    //O método 'toUpperCase()' retorna os caracteres da String em caixa alta:
 console.log(bracha.toUpperCase())
 
 //
 
 let email = "    cursosDoMain     "
-    //O método 'trim()' retorna os espaços em branco, indesejados nesse caso, por exemplo um campo de e-mail, ou usuário;
+    //O método 'trim()' retorna a String com os espaços em branco já removidos, por exemplo um campo de e-mail, ou usuário;
 console.log(email.length)
 console.log(email.trim())
 
@@ -33,7 +34,7 @@ console.log(farray)
 
 //
 
-//O método 'indexOf()' retorna a posição do primeiro caractere dentro da String(Variável na linha 21):
+//O método 'indexOf()' retorna a posição do primeiro índice dentro da String(Variável na linha 21):
 console.log(frase.indexOf("que"))
     //Já o método 'lastIndexOf()' retorna a última posição da primeira letra do valor específico dentro da String:
 console.log(frase.lastIndexOf("vamos"))
@@ -48,7 +49,7 @@ console.log(frase.slice(19, 24))
 let frase2 = frase.slice(19, 24)
 console.log(frase2)
 
-//O método replace retira uma parte expecífica da String e a substitui por outro atribuído:
+//O método replace retira uma parte expecífica da String e a substitui por outro valor:
 
 let fraseReplaced = frase.replace("vamos", "iremos")
 console.log(fraseReplaced)
