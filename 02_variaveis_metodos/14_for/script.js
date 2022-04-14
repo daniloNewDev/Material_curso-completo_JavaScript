@@ -1,6 +1,11 @@
 //O statement 'for'.
 
-//O loop 'for' é statement(instrução) que define um bloco de código que é executado enquanto a condição for 'true'(verdadeiro);
+//O loop 'for' é statement(instrução) que define um bloco de código que é executado enquanto a condição for 'true'(verdadeiro):
+
+for (let x = 0; x <= 7; x++) {
+    console.log(x)
+}
+
 //Sintaxe: 
 /*
     for (instrução 1; instrução 2; instrução 3) {
@@ -14,10 +19,29 @@
     A instrução 3 é executada depois do bloco de código e normalmente é atribuído um incremento(x++) para a contagem do valor de uma variável.
 
 */
-for (let x = 0; x <= 7; x++) {
-    console.log(x)
+
+//Loop 'for...in':
+//O 'statement' 'for...in' percorre todas as propriedades de um 'object:
+
+let refri = {
+    coca: " 9 R$",
+    guarana: " 8 R$",
+    sprite: " 8 R$",
+    fanta: " 7 R$"
 }
+
+for (let p in refri) {
+    console.log(p += refri[p])
+}
+
 
 //Os loops executam um bloco de códigos várias vezes enquanto a condição da execução for 'true'. O loop é essencia quando há a necessidade de executar um código várias vezes por conta de um valor diferente;
 
 //O que difere da estrutura de repetição 'while' e 'do while' é que 'for' não necessita de tantas linha para formar o código, além de ser mais simples de se compreender.
+
+//Loop 'for..in' em um 'array'.//O 'statement''for..in' também pode fazer um Loop sobre as propriedades de um 'array':
+
+let partes = ["chave", "porta", "janela", "fogão"]
+for (let x in partes) {
+    console.log(partes[x])
+}

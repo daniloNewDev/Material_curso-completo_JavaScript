@@ -26,13 +26,28 @@ console.log(carros["fiat"])
 
 
 
+//Propriedades em Loop:
+
+//Um bloco de códigos dentro de um 'for...in' é executado uma vez para cada propriedade:
+
+let refri = {
+    coca: " 9 R$",
+    guarana: " 8 R$",
+    sprite: " 8 R$",
+    fanta: " 7 R$"
+}
+
+for (let p in refri) {
+    console.log(p += refri[p])
+}
+
 
 //Uma propriedades funciona quase igual a um método, a Propriedade funciona como um identificador válido;
 
 //Os nomes de propriedades devem ser em formato string;
 
 let nome = "Israel"
-let Ysim = ["Tel Aviv", "Golam", "Jerusalém", "Beit L'Hem"]
+let ysim = ["Tel Aviv", "Golam", "Jerusalém", "Beit L'Hem"]
 
 console.log(nome.length)
-console.log()
+console.log(ysim.length)
