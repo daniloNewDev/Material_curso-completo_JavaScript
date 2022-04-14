@@ -8,7 +8,7 @@ console.log(true)
 console.log(arr[arr.length - 1])
 console.log(arr.sort())
 
-//O Objjeto 'Array' é usado para armazenar dis ou mais valores em uma única variável;
+//O Objeto 'Array' é usado para armazenar dois ou mais valores em uma única variável;
 
 //Os índices do 'Array' iniciam na posição 0. O primeiro index no Array está na posição 0, o segundo na posição 1 e assim por diante;
 
