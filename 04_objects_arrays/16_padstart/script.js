@@ -4,3 +4,5 @@
 
 let num = "45"
 console.log(num.padStart(6, 0))
+
+//Funciona naquele "mil ao contrário"
