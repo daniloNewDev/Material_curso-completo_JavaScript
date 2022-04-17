@@ -24,10 +24,10 @@ for (let x = 0; x <= 7; x++) {
 //O 'statement' 'for...in' percorre todas as propriedades de um 'object:
 
 let refri = {
-    coca: " 9 R$",
-    guarana: " 8 R$",
-    sprite: " 8 R$",
-    fanta: " 7 R$"
+    coca: " R$ 9",
+    guarana: " R$ 8",
+    sprite: " R$ 7",
+    fanta: " R$ 7"
 }
 
 for (let p in refri) {
