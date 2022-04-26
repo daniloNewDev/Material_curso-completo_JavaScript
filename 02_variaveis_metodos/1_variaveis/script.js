@@ -1,4 +1,11 @@
-let nome = "Danilo"
+var x = 6
+let y = 7
+const z = 8
+
+//      Váriaveis são containers para armazernar dados (armazenando o nome de dados e os valores de dados)
+
+
+var nome = "Danilo" //A palavra-chave 'var' é usada em todo o código JavaScript desde 1995, já as palavras-chave 'let' e 'const' foram adicionadas ao JavaScript em 2015;
 
 console.log(nome);
 console.log(`O meu nome é ${nome}`);
